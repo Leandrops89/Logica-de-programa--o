@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#Calculadora
+num1 = float(input('digite um numero\n'));
+oper1 = input('digite um operador\n');
+num2 = float(input('digite um numero\n'));
+oper2 = input('digite um operador\n');
+num3 = float(input('digite um numero\n'));
+
+if   oper1 == '+' and oper2 == '+':
+    print('resultado é', num1 + num2 + num3);
+elif oper1 == '-' and oper2 == '-':
+    print('resultado é', num1 - num2 - num3);
+elif oper1 == '*' and oper2 == '*':
+    print('resultado é', num1 * num2 * num3);
+elif oper1 == '+' and oper2 == '-':
+    print('resultado é', num1 + num2 - num3);
+elif oper1 == '-' and oper2 == '+':
+    print('resultado é', num1 - num2 + num3);
+elif oper1 == '*' and oper2 == '/':
+    print('resultado é', num1 * num2 / num3);
+else:
+    print('operador invalido');
+
